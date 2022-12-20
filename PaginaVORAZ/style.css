@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
+    font-family: 'Ubuntu', sans-serif;}
+    
   body {
+    background-image: url(vorazPDF.jpg);
+    background-color: white;  
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
+    background-size: 100%;
   }
+
   nav {
     position: relative;
     display: flex;
@@ -21,7 +25,7 @@
     text-decoration: none;
   }
   nav a span {
-    color: #333;
+    color: rgb(8, 119, 23);
     text-decoration: none;
     font-size: 3em;
     padding: 5px 20px;
@@ -30,13 +34,14 @@
     transition: 0.5s;
   }
   nav:hover a span {
-    color: #0002;
-  }
+    color: rgba(255, 255, 255, 0.562);
+    }
+
   nav a:hover span {
-    color: #000;
-    background: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
   }
-  nav a span:before {
+
+    nav a span:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -46,7 +51,8 @@
     justify-content: center;
     align-items: center;
     font-size: 4em;
-    color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 1, 1, 0.301);
+
     /* border-radius: 50%; */
     z-index: -1;
     opacity: 0;
@@ -63,10 +69,14 @@
     width: 1800px;
     height: 1800px;
   }
-  nav a:nth-child(6n + 1) span:before {
+  nav a:nth-child(4n + 1) span:before {
     /* background: #81ecec; */
-    background: #ea738dff;
+    background-image: url(foto01.jpg);
+    max-width: 800%;
+    max-height: 840px;
   }
+
+  
   nav a:nth-child(6n + 2) span:before {
     /* background: #ff7675; */
     background: #fbeaeb;
